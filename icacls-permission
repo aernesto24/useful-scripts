@@ -1,0 +1,5 @@
+$PathToSave = "G:\Shares\Documents"
+#This is an example path, here you write the path to backup
+$PathWhereToSave = "C:\Users\Bkadmin\Desktop\Foldersbk\Securitybk$(get-date -f yyy-MM-dd).txt"
+#this is the path where you want to store the .txt files
+icacls $PathToSave /save $PathWhereToSave /T
